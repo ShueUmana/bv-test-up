@@ -1,21 +1,18 @@
-{{#bs-accordion as |acc|}}
-  {{#acc.item type="success"  value="1" title="First item"}}
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur ea eos hic neque quia sequi sunt. Amet at atque corporis earum et fugiat illum magnam nisi sapiente voluptatem. Laudantium, quam?</p>
-  {{/acc.item}}
-  {{#acc.item type="danger" value="2" as |aitem|}}
-    {{#aitem.title}}
-      <strong>Second</strong> <i>item</i>
-    {{/aitem.title}}
-    {{#aitem.body}}
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur ea eos hic neque quia sequi sunt. Amet at atque corporis earum et fugiat illum magnam nisi sapiente voluptatem. Laudantium, quam?</p>
-    {{/aitem.body}}
-  {{/acc.item}}
-  {{#acc.item type="warning" value="3" title="Third item"}}
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur ea eos hic neque quia sequi sunt. Amet at atque corporis earum et fugiat illum magnam nisi sapiente voluptatem. Laudantium, quam?</p>
-  {{/acc.item}}
-{{/bs-accordion}}
-{{!-- The following component displays Ember's default welcome message. --}}
-{{welcome-page}}
-{{!-- Feel free to remove this! --}}
+<nav class="navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">BV-test-up</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active "><a href="/">Incio</a></li>
+      <li><a href="login">Page 2</a></li>
+      <li><a href="signin">Page 3</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li class=""><a href="login">{{fa-icon "sign-out" class="green-color-text"}}</a></li>
+    </ul>
+  </div>
+</nav>
+
 
 {{outlet}}
