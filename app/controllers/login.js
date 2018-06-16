@@ -21,14 +21,14 @@ export default Controller.extend({
                             sessionStorage.setItem("user", email);
                             flag=1;
                         }
-                    }else{
+                    }else{ // sino esta alojado en el Json fue usuario nuevo, debe de estar en el localStorage
                         if (localStorage.getItem(user) === null) {
                             flag=1;
                         }
                     }
-                    if(!flag){
+                    if(!flag){  // en caso de que los datos no sean encontrados, se controla el error
                         $(".data-error").removeClass('hidden');
-                    }else{
+                    }else{ // envio de success al contenido de la aplicacion
                         window.location.replace("/content");   
                     }
                 })
