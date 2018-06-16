@@ -4,9 +4,9 @@
       <a class="navbar-brand" href="#">BV-test-up</a>
     </div>
     <ul class="nav navbar-nav">
-      <li class="active "><a href="/">Incio</a></li>
-      <li><a href="login">Page 2</a></li>
-      <li><a href="signin">Page 3</a></li>
+      <li class="active ">{{#link-to 'index'}}Home{{/link-to}}</li>
+      <li>{{#link-to 'login'}}logIn{{/link-to}}</li>
+      <li>{{#link-to 'signin'}}SignIn{{/link-to}}</li>
     </ul>
     <ul class="nav navbar-nav navbar-right">
       <li class=""><a href="login">{{fa-icon "sign-out" class="green-color-text"}}</a></li>
