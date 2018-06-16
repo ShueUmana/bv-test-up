@@ -28,6 +28,16 @@ The API endpoint you will need to code out is an email search. Here is an
 example API call:
 http://www.beenverified.com/hk/dd/email?email=skip.suva@gmail.com
 
+### LogIn user Example
+
+´´´
+    "test@uno.com":"1234",
+    "test@dos.com":"1234",
+    "test@tres.com":"1234",
+    "test@cuatro.com":"1234",
+    "test@cinco.com":"1234"
+´´´
+
 
 # bv-test-up
 
