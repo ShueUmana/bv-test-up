@@ -28,6 +28,8 @@ export default Controller.extend({
                     }
                     if(!flag){
                         $(".data-error").removeClass('hidden');
+                    }else{
+                        window.location.replace("/content");   
                     }
                 })
                 .fail(function() {
