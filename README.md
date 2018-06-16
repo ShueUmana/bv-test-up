@@ -1,13 +1,13 @@
-#Front-end Engineer Test
+# Front-end Engineer Test
 
-##Challenge Details:
+## Challenge Details:
 
-###YOUR MISSION
+### YOUR MISSION
 For this challenge, we want you to design and build a single page app that
 allows a user to log in, run some reports, and store them in the browser's
 local storage.
 
-###DETAILS
+### DETAILS
 At BeenVerified, a common design pattern is that of a single page app
 consuming an API endpoint. In order to use the applications, users need to
 sign up for a plan, and be logged into their account. The accounts also
