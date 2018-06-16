@@ -5,7 +5,7 @@
             <h1 class="text-center login-title">Insert data to Create an account BV-test-up</h1>
             <div class="account-wall">
                 {{fa-icon "user-plus" class="profile-img"}}
-                <form class="form-signin" {{action 'newUser' on='submit'}}>
+                <form class="formSignin" {{action 'newUser' on='submit'}}>
                 {{input value=email placeholder='Email' class='form-control' type='email' required='required' 	autofocus='autofocus'}}
                 {{input value=password placeholder='Password' class='form-control' type='password' required='required'}}
                 <button class="btn btn-lg btn-primary btn-block" type="submit">
