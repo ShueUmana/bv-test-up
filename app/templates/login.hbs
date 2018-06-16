@@ -13,7 +13,10 @@
                     Sign in</button>
                 </form>
             </div>
-            <a href="#" class="text-center new-account">Create an account </a>
+            {{#link-to 'signin' class="text-center new-account"}}
+                Create an account
+            {{/link-to}}
+            
         </div>
     </div>
 </div>
