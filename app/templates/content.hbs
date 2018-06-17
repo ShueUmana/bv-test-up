@@ -5,12 +5,32 @@
     </div>
     <ul class="nav navbar-nav">
       <li class="active ">{{#link-to 'index'}}Home{{/link-to}}</li>
-      <li>{{#link-to 'login'}}logIn{{/link-to}}</li>
-      <li>{{#link-to 'signin'}}SignIn{{/link-to}}</li>
+      <li>{{#link-to 'login'}}History{{/link-to}}</li>
+      <li>{{#link-to 'content'}}Seach Data{{/link-to}}</li>
     </ul>
     <ul class="nav navbar-nav navbar-right">
-      <li class=""><a href="#" {{action "logout"}}> {{fa-icon "sign-out" class="green-color-text"}} </a></li>
+      <li class="">
+        <a href="#" {{action "logout"}}> {{fa-icon "sign-out" class="green-color-text"}} </a>
+      </li>
     </ul>
   </div>
-</nav> 
+</nav>
+
+<div class="site-wrapper">
+  <div class="site-wrapper-inner">
+    <div class="cover-container">
+      <div class="inner cover bg-cover">
+        <h1 class="cover-heading">Searching for a email?</h1>
+        <p class="lead">Find here what you need?</p>
+        <p class="lead">
+          <form class="form-signin" {{action 'searchMailData' on='submit' }}>
+            {{input value=email placeholder='Email' class='form-control margin-input-b' type='email' required='required' autofocus='autofocus'}}
+            <button id="btn-test" class="btn btn-lg btn-secondary" type="submit">Find data</button>
+          </form>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
 {{outlet}}
