@@ -1,1 +1,35 @@
+{{menu-top}}
+
+<div class="site-wrapper">
+    <div class="site-wrapper-inner">
+        <div class="cover-container2">
+            <div class="inner cover bg-cover">
+                <h1 class="cover-heading">History</h1>
+                <p class="lead">All data from timeline</p>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Date of birth</th>
+                            <th>+Info</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {{#each model as |row index|}}
+                        <tr>
+                            <td>{{row.names.[0].full}}</td>
+                            <td>{{row.emails.[0].email_address}}</td>
+                            <td>{{row.dob}}</td>
+                            <td>{{#link-to 'response' index class="text-center info-plus"}}{{fa-icon "plus" class="more-info"}}{{/link-to}}</td>
+                        </tr>
+                        {{/each}}
+                    </tbody>
+                    
+
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
 {{outlet}}

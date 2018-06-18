@@ -12,6 +12,7 @@ Router.map(function() {
   this.route('content');
   this.route('response');
   this.route('history');
+  this.route('response', { path: 'response/:id' });
 });
 
 export default Router;
