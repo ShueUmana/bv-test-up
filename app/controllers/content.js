@@ -11,7 +11,7 @@ export default Controller.extend({
             // get data from form
             let { email } = this.getProperties('email');
             // post data to REST listener
-            $.post( "http://www.beenverified.com/hk/dd/email?email="+email, function(data) {})
+            $.post( "http://www.beenverified.com/hk/dd/email?email="+email, function() {})
                 .done(function(data) {
                     // function to store data in localStorage 
                     if(localStorage.getItem("SearchHistoryBVTest") !== null){
@@ -20,7 +20,6 @@ export default Controller.extend({
                         searchhistory.push(data);
                         localStorage.setItem("SearchHistoryBVTest", JSON.stringify(searchhistory));
                     }else{  // first entry is empty, Creation
-                        console.log('else')
                         let firstObj=[data];
                         localStorage.setItem("SearchHistoryBVTest", JSON.stringify(firstObj));
                     }
