@@ -11,6 +11,7 @@ Router.map(function() {
   this.route('signin');
   this.route('content');
   this.route('response');
+  this.route('history');
 });
 
 export default Router;
