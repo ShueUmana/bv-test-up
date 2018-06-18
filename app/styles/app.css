@@ -95,7 +95,7 @@
 a,
 a:focus,
 a:hover {
-  color: #fff;
+  color: rgba(255, 255, 255, 0.836);
 }
 
 /* Custom default button */
@@ -141,6 +141,11 @@ body {
   vertical-align: top;
 }
 .cover-container {
+  margin-right: auto;
+  margin-left: auto;
+  margin-top:8%;
+}
+.cover-container2 {
   margin-right: auto;
   margin-left: auto;
   margin-top:8%;
@@ -242,6 +247,9 @@ body {
   .cover-container {
     width: 100%; /* Must be percentage or pixels for horizontal alignment */
   }
+  .cover-container2 {
+    width: 100%; /* Must be percentage or pixels for horizontal alignment */
+  }
 }
 
 @media (min-width: 62em) {
@@ -249,6 +257,9 @@ body {
   .mastfoot,
   .cover-container {
     width: 42rem;
+  }
+  .cover-container2 {
+    width: 100rem;
   }
 }
 
@@ -262,4 +273,17 @@ body {
 
 .margin-input-b{
   margin-bottom: 20px;
+}
+.table-dark{
+  color: black;
+}
+
+.table a, a:focus, a:hover{
+  color: #333;
+}
+.table a, a:focus, a:hover{
+  color: #333;
+}
+th{
+  text-align: center !important;
 }

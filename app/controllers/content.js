@@ -24,6 +24,7 @@ export default Controller.extend({
                         let firstObj=[data];
                         localStorage.setItem("SearchHistoryBVTest", JSON.stringify(firstObj));
                     }
+                    window.location.replace("/response");  
                 })
                 .fail(function() {
                   alert( "ups, access-control-allow-origin, fix this option first" );
